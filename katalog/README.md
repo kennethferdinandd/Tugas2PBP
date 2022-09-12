@@ -1,6 +1,6 @@
 1. Bagan yang berisi request client ke web aplikasi berbasis Django beserta responnya dan jelaskan pada bagan tersebut kaitan antara urls.py, views.py, models.py, dan berkas html
 
-![pbp](/desktop/pbp.png)
+![pbp](/assets/pbp.png)
 
 Dari client side akan mengirimkan sebuah GET HTTP Request kepada server. Nantinya, server dengan urls.py akan memetakan request ke controller (disini controller nya adalah views) sesuai dengan URL yang seharusnya. Controller yang terdefinisi pada views.py akan me-render file HTML yang ada pada server beserta dengan data yang dibutuhkan. Data yang dirender menjadi sebuah file HTML didapatkan dari database yang berasal dari models.py. 
 
