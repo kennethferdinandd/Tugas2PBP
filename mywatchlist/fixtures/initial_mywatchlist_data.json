@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":1,
+        "fields":{
+            "watched":1,
+            "title":"Prisoners",
+            "rating": 4,
+            "release_date" : "8 October 2013",
+            "review" : "Prisoners is a true masterpiece, in my opinion. The plot, the suspense, everything is really perfectly played out. It leaves you on the edge of your seat, transporting you to another world of mystery and suspense. Jake Gyllenhaal and Hugh Jackman are incredible, their acting is amazing. A movie I recommend watching and will never forget. The ending is just a whole other thing, just wow. It will leave you wanting more, but you'll come back to reality. It's creepy and full of twists and turns! Once you watch it however, the next time won't be as suspenseful because you will know what happened! But showing it to your family and friends and rewatching it is worth it!"
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":2,
+        "fields":{
+            "watched":1,
+            "title":"Fight Club",
+            "rating": 4,
+            "release_date" : "11 November 1999",
+            "review" : "I think it’s great. The script writing, even though is not exactly parallel to the novel, still conveys the same writing style that Chuck wrote in, that being a very poetic and a peculiarly descriptive way. I love each role and each actor that fills those roles, I think Edward Norton and Brad Pitt did a phenomenal job in showing both the narrator’s weaker sensitive side and his bold and masculine side in such contrasting ways which eventually blend together. The story is amazing, with a really interesting plot line that talks about masculinity and identity, which we have Chuck to praise for. Edward Norton’s narration throughout the film adds another layer of mental struggle and character to this narrator’s mind and to top it all off, we have Where is my mind by Pixies being played in the final scene as we watch Marla and the narrator close ends. I think it’s a must watch, and definitely deserves the recognition it gets. Ahead of its time."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched":1,
+            "title":"The Dark Knight",
+            "rating": 5,
+            "release_date" : "18 July 2008",
+            "review" : "The Dark Knight is defiantly hands down my favorite Batman movie of all time! This movie is absolutely masterpiece and darkest Batman and DC movie I had ever seen! Like cast did amazing on their roles like I once again really enjoyed Christian Bale as Batman, I defiantly really love Heath Ledger (RIP) as The Joker and he is my all time favorite Joker and his acting was amazing of making his character so threatening and Heath Ledger's Joker is one my favorite cinematic villains of all time also his Joker mischief was very creative, I also love Aaron Eckhart as Two-Face and he is my favorite Two-Face of all time, I once again enjoyed Michael Caine as Alfred Pennyworth, Cillian Murphy still nailed as Scarcrow, I still enjoyed Gary Oldman as Commissioner Gordon, I love Morgan Freeman as Lucius Fox, I really like Maggie Gyllenhaal as Rachel Dawe and she was much better as Rachel then Katie Holmes, and the rest of cast did fantastic on their roles, storytelling was just so amazing, fight scenes were sick, it had amazing development on characters, dark tone was very well done, emotional scenes were perfect, visual effects were stunning, and music was amazing. This is everything we want from Batman movie and defiantly best movie ever made in 2008. I give this masterpiece a 10/10!!!"
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":4,
+        "fields":{
+            "watched":1,
+            "title":"Shawshank Redemption",
+            "rating": 4,
+            "release_date" : "22 September 1994",
+            "review" : "This is an engagingly simple, good-hearted film, with just enough darkness around the edges to give contrast and relief to its glowingly benign view of human nature. Based on a novella by Stephen King, The Shawshank Redemption is a harrowing tale about the triumph of the human spirit. The story follows a banker named Andy Duphrane who's wrongfully convicted of killing his wife and her lover, and is sent to the Shawshank maximum security prison where he befriends another inmate named Red. Starring Tim Robbins, Morgan Freeman, John Sandler, and Clancy Brown, the film has an impressive cast that gives good performances. Additionally, screenwriter/director Frank Darabont does an excellent job at developing the characters and relationships; making the audience care about them and their plight. The set and costume designs too, are especially well-done; capturing the time-period and giving the prison a real, lived-in feel. Also, the score by Thomas Newman is emotionally evocative and has a soulfulness to it that heightens the material. The Shawshank Redemption is a remarkably compelling film with a powerful message."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":5,
+        "fields":{
+            "watched":1,
+            "title":"Hustle",
+            "rating": 3,
+            "release_date" : "3 June 2022",
+            "review" : "An absolutely beautiful movie with many important life lessons. From loving and trusting yourself in addition to those around you that you care for, not judging a book by its cover, don’t back down from your dreams, to life being entirely about taking a chance or a leap of faith. The movie obviously revolves around basketball, but I’d say it’s just as much of a drama as it is a sports movie. I feel the balance was handled very well, but I also enjoy watching basketball games. Adam Sandler absolutely crushed it in this movie. I have been a huge fan of his comedies for as long as I can remember, but I am so happy that Adam is putting a focus on showing off his acting skills in another more serious movie and I hope this is a trend that he sticks to. Adam was funny but in a relatable way, not a comedy movie way. Juancho Hernangomez obviously also had a big role in this movie as one of the main characters, and I think he did an amazing job at playing a believable, lovable and relatable character as well. His struggle with self appreciation was very well handled and portrayed by Juancho beautifully. Now, Anthony Edwards, I know he probably isn’t at all like his character that he plays in the movie, but that just makes it all the more impressive that he really managed to make me dislike his character as strongly and as quickly as he did. The movie isn’t perfect by any means, but the imperfections I feel are really just nit-picks, such as the kid at the private game after the combine still not knowing about Boa even after he literally blew up as a social media phenomenon just down the road, that doesn’t make much sense. Especially considering the kid is permitted to be at a “super hush hush” secret game for scouts. Again, but-picking here. All in all, I think this is easily among my top 5 Adam Sandler movies, and I think it is well worth watching if you like basketball even just a little bit."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":6,
+        "fields":{
+            "watched" : 1,
+            "title":"Forrest Gump",
+            "rating": 4,
+            "release_date" : "6 July 1994",
+            "review" : "Tom hanks has done an amazing job to portray this character, I believe he is one of the only Hollywood actors who could of pulled this role off. He puts himself into the roll of the character and brings out the best forest gump; he turns a normal, average character into a new bright and vibrant personality that people can relate to as he is committed to being Forest Gump; his ability to fit the role and how its portrayed makes us movie watchers that we are actually in the film which could of only been done by Tom Hanks. Tom Hanks is not the only actor in this movie that made it won six Academy Awards, actor Robin Wright who played as Forest Gumps true love. In multiple scenes of the movie you can see her make a full commitment to the role, an example of this would be when Robin sits on the stage naked playing a guitair, Forest notices her and picks her up off the stage. By robin doing this scene its obvious that it was true dedication to be able to fit on a stage naked in a film that was going to be shown to millions around the world. This dedication by these main characters have really made the move spectacular and worth watching, its truly deserving of its awards that it has been awarded."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":7,
+        "fields":{
+            "watched":1,
+            "title":"Green Mile",
+            "rating": 4,
+            "release_date" : "6 December 1999",
+            "review" : "I recommend this as a must watch movie. I watched this to see another Tom Hanks 'magic' but the man who really embraced my heart was Michael Duncans through his portrayal of John Coffey. I consider his acting as the cutest performance ever witnessed. The major plus point of the movie is that it gives a realistic feeling even though it's dealing with superstitious powers. Despite the 3 hour long duration it doesn't lag anywhere & is really a heartwarming one. At the end it will definitely bring tears in your eyes but when you think more about the climax you will understand that sometimes death is a relief as you don't have to face the hardships of the world anymore.s"
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":8,
+        "fields":{
+            "watched":1,
+            "title":"Forgotten",
+            "rating": 3,
+            "release_date" : "29 November 2017",
+            "review" : "Overall, Forgotten is competently crafted & confidently directed, and makes for a thoroughly gripping psychological horror. The narrative flow & momentum is disrupted by the exposition laden second half but the way its events unfold, the interest in the outcome is never lost."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":9,
+        "fields":{
+            "watched":1,
+            "title":"The Revenant",
+            "rating": 3,
+            "release_date" : "3 February 2016",
+            "review" : "Sleeping inside a dead horse is the most outrageous but effective idea to survive the harsh winter storm 🐴🗡️🛌😱. Leonardo Di Caprio gives a stellar performance as Hugh Glass which undoubtedly snagged the coveted Best Actor Award from Oscar which the whole world celebrated with him after numerous snubs from the prestigious award giving bodies for movies. Also, Tom Hardy gave us a convincing portrayal of John Fitzger, the antagonist who killed Hugh's adopted son and left him to death. Im even flabbergasted that it was Tom after the roll credits. He really looks like a different person esp that accent 🙌👌👍👏. Its a great story of vengeance and survival. I love the last part where Hugh didnt kill John but instead let the Indian tribe to do it. Its giving us a visual example of how the karma will do the job on taking care of those who did bad to you."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":10,
+        "fields":{
+            "watched":1,
+            "title":"Drive",
+            "rating": 3,
+            "release_date" : "1 November 2019",
+            "review" : "Well as a fan my review to this movie is just one time watchable movie as this movie is inspired for racers and thefts. There are certain scene of race which were great but also the shocking winner scene of King aka Jacqueline Fernandez. Whereas Sushant Singh Rajput has done greatest job in this movie as per his role along with Boman Irani. As the gang took a great turn when they succeed in stealing gold but it was my curious to see the enter of undercover officer who was driving Aston martin. The car chase and plan were sound nice but all over this film sounds like incomplete as story was missing. I believe that there must be some scene which were missing such as reason behind why changed name and became street racer and thieve. As a fan it is easy to write and say but as per actor profession it is hard to complete it so no more ambition. With respect and love I would like to conclude."
+        }
+    }
+]
