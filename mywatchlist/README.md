@@ -30,6 +30,7 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 <h1> Postman </h1>
 
 <h2> HTML </h2>
+<<<<<<< HEAD
 ![html](/images/html.jpg)
 
 <h2> XML </h2>
@@ -37,3 +38,12 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 
 <h2> JSON </h2>
 ![json](/images/json.jpg)
+=======
+![HTML](assets/html.jpg)
+
+<h2> XML </h2>
+![XML](assets/xml.jpg)
+
+<h2> JSON </h2>
+![JSON](assets/json.jpg)
+>>>>>>> 4d4583f18cabaa1787f910cfd925935f2e2df2b4
