@@ -30,21 +30,13 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 <h1> Postman </h1>
 
 <h2> HTML </h2>
-<<<<<<< HEAD
+
 ![html](/assets/html.jpg)
 
 <h2> XML </h2>
+
 ![xml](/assets/xml.jpg)
 
 <h2> JSON </h2>
+
 ![json](/assets/json.jpg)
-=======
-![html](https://github.com/kennethferdinandd/TugasPBP/blob/main/mywatchlist/images/html.jpg)
-
-<h2> XML </h2>
-![xml](images/xml.jpg)
-
-<h2> JSON </h2>
-![json](images/json.jpg)
-
->>>>>>> 53927d07e9a27c9a0ba89e8310935d40de2f8362
