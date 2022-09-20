@@ -30,10 +30,10 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 <h1> Postman </h1>
 
 <h2> HTML </h2>
-![html](/assets/html.jpg)
+![HTML](/assets/html.jpg)
 
 <h2> XML </h2>
-![xml](/assets/xml.jpg)
+![XML](/assets/xml.jpg)
 
 <h2> JSON </h2>
-![json](/assets/json.jpg)
+![JSON](/assets/json.jpg)
