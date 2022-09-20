@@ -26,3 +26,14 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 12. Ubah file settings.py agar bisa menjalankan tests.py
 13. Jalankan perintah `python manage.py loaddata initial_mywatchlist_data.json` dan `python manage.py test`
 14. Ubah procfile agar aplikasi dapat berjalan
+
+<h1> Postman </h1>
+
+<h2> HTML </h2>
+![html](/assets/html.jpg)
+
+<h2> XML </h2>
+![xml](/assets/xml.jpg)
+
+<h2> JSON </h2>
+![json](/assets/json.jpg)
