@@ -30,7 +30,7 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 <h1> Postman </h1>
 
 <h2> HTML </h2>
-![html](images/html.jpg)
+![html](https://github.com/kennethferdinandd/TugasPBP/blob/main/mywatchlist/images/html.jpg)
 
 <h2> XML </h2>
 ![xml](images/xml.jpg)
