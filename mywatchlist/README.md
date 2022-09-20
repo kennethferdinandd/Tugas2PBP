@@ -12,9 +12,17 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 
 <h1> Implementasi </h1> 
 
-1. Dalam memulai aplikasi mywatchlist, saya menggunakan command 'python manage.py startapp mywatchlist' pada directory yang diinginkan.
-2. Setelah itu, saya menambahkan 'path('mywatchlist/', include('mywatchlist.urls')),' pada file urls.py yang ada di urlpatterns yang berada dalam folder django_project 
-3. Lalu saya menambahkan 'urlpatterns = [ ..., path('xml/', show_xml, name='show_xml'), path('json/', show_json, name='show_json'), ... ]' pada urls.py yang ada pada file mywatchlist saya.
+1. Dalam memulai aplikasi mywatchlist, saya menggunakan command `python manage.py startapp mywatchlist` pada directory yang diinginkan
+2. Setelah itu, saya menambahkan `path('mywatchlist/', include('mywatchlist.urls')),` pada file urls.py yang ada di urlpatterns yang berada dalam folder django_project 
+3. Lalu saya menambahkan `urlpatterns = [ ..., path('xml/', show_xml, name='show_xml'), path('json/', show_json, name='show_json'), ... ]` pada urls.py yang ada pada file mywatchlist saya
 4. Kemudian saya membuat models.py yang berada di folder mywatchlist dengan model bernama MyWatchlist dengan data fields watched, title, rating, release_date, dan review
-5. Setelah itu, saya jalankan perintah 'python manage.py makemigrations' dan 'python manage.py migrate' untuk melakukan migrasi agar model dapat terbuat pada database. 
-6. 
+5. Setelah itu, saya jalankan perintah `python manage.py makemigrations` dan `python manage.py migrate` untuk melakukan migrasi agar model dapat terbuat pada database.
+6. Kemudian saya membuat folder yang bernama fixtures didalam mywatchlist untuk membuat file bernama initial_mywatchlist_data.json yang berisi data yang akan digunakan
+7. Setelah itu saya jalankan perintah `python manage.py loaddata initial_mywatchlist_data.json` untuk memasukkan data tersebut ke local saya
+8. Lalu saya menambahkan fungsi yang dibutuhkan pada file views.py
+9. Tidak lupa untuk membuat folder templates yang berisi mywatchlist.html untuk mapping data yang ada pada fungsi views untuk menampilkan pada page HTML
+10. Karena kita perlu data dalam bentuk XML dan JSON, buat fungsi untuk menampilkan data dalam bentuk XML dan JSON pada views.py
+11. Pada file tests.py, buat testing 
+12. Ubah file settings.py agar bisa menjalankan tests.py
+13. Jalankan perintah `python manage.py loaddata initial_mywatchlist_data.json` dan `python manage.py test`
+14. Ubah procfile agar aplikasi dapat berjalan
