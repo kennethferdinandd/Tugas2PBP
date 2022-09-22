@@ -1,4 +1,6 @@
-<h1>Link menuju Heroku : https://tugaspbpkedua.herokuapp.com/ </h1>
+<h3>Link menuju Heroku (HTML) : https://tugaspbpkedua.herokuapp.com/mywatchlist/html/ </h3>
+<h3>Link menuju Heroku (JSON) : https://tugaspbpkedua.herokuapp.com/mywatchlist/json/ </h3>
+<h3>Link menuju Heroku (XML) : https://tugaspbpkedua.herokuapp.com/mywatchlist/xml/ </h3>
 
 <h1> Perbedaan HTML, JSON dan XML </h1>
 
