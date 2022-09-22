@@ -23,7 +23,7 @@ Dalam sebuah platform, terjadi biasanya kita melihat sekumpulan data. Data terse
 7. Setelah itu saya jalankan perintah `python manage.py loaddata initial_mywatchlist_data.json` untuk memasukkan data tersebut ke local saya
 8. Lalu saya menambahkan fungsi yang dibutuhkan pada file views.py
 9. Tidak lupa untuk membuat folder templates yang berisi mywatchlist.html untuk mapping data yang ada pada fungsi views untuk menampilkan pada page HTML
-10. Karena kita perlu data dalam bentuk XML dan JSON, buat fungsi untuk menampilkan data dalam bentuk XML dan JSON pada views.py
+10. Karena kita perlu data dalam bentuk HTML, XML dan JSON, buat fungsi untuk menampilkan data dalam bentuk HTML, XML dan JSON pada views.py
 11. Pada file tests.py, buat testing
 12. Ubah file settings.py agar bisa menjalankan tests.py
 13. Jalankan perintah `python manage.py loaddata initial_mywatchlist_data.json` dan `python manage.py test`
