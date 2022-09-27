@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <h1>Hello, {{username}}!</h1>
+  <button style="margin-bottom: 20px">
+    <a
+      href="{% url 'todolist:create_task' %}"
+      style="text-decoration: none; color: black"
+      >Tambah Task</a
+    >
+  </button>
+  <h2>This is your To Do List : </h2>
+  <table>
+    <tr>
+      <th>Task</th>
+      <th>Description</th>
+      <th>Created at</th>
+      <th>Status</th>
+      <th>Delete task</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+  
+    {% for task in todolist %}
+    <tr>
+        <td>{{task.title}}</td>
+        <td>{{task.description}}</td>
+        <td>{{task.date}}</td>
+        <td>
+            <input
+              type="checkbox"
+              name="status"
+              id="status"
+              {% if task.is_finished %} checked {% endif %}
+              onchange="location.href='{% url 'todolist:trigger_is_finished' task.id %}'"
+            />
+          </td>
+        <td style="display: flex; justify-content: center">
+            <button><a href="{% url 'todolist:delete_task' task.id %}">Delete</a></button>
+          </td>
+    </tr>
+      
+    </tr>
+    {% endfor %}
+  </table>
+  <button style="margin-top: 20px">
+    <a
+      href="{% url 'todolist:login' %}"
+      style="text-decoration: none; color: black"
+      >Logout</a
+    >
+  </button>
+
+ {% endblock content %}
