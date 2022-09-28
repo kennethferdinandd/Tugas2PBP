@@ -1,4 +1,4 @@
-<h3> [Link Menuju Heroku](http://tugaspbpkedua.herokuapp.com/todolist/)<h3>
+<h3> Link Menuju HEROKU : http://tugaspbpkedua.herokuapp.com/todolist/<h3>
 
 ## Apa kegunaan {% csrf_token %} pada elemen ? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen ?
 
