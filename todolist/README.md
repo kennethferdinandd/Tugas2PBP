@@ -1,20 +1,20 @@
 <h3> [Link Menuju Heroku](http://tugaspbpkedua.herokuapp.com/todolist/)<h3>
 
-<h1> Apa kegunaan {% csrf_token %} pada elemen ? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen ? <h1>
+## Apa kegunaan {% csrf_token %} pada elemen ? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen ?
 
 CSRF token berguna untuk mencegah serangan CSRF. Ddengan adanya CSRF token, serangan CSRF semakin sulit terjadi dengan membuat penyerang tidak mungkin membuat HTTP request yang sepenuhnya valid yang cocok untuk diumpankan ke korban.
 
 Kita tetap bisa menjalankan website kita tanpa menggunakan CSRF token. Namun, kita akan rentan terkena serangan CSRF. Sehingga, penggunaan CSRF Token disarankan untuk alasan keamanan.
 
-<h1> Apakah kita dapat membuat elemen `<form>` secara manual (tanpa menggunakan generator seperti `{{ form.as_table }}`)? Jelaskan secara gambaran besar bagaimana cara membuat `<form>` secara manual. <h1>
+## Apakah kita dapat membuat elemen `<form>` secara manual (tanpa menggunakan generator seperti `{{ form.as_table }}`)? Jelaskan secara gambaran besar bagaimana cara membuat `<form>` secara manual.
 
 Kita bisa saja membuat elemen `<form>` tanpa menggunakan `{{ form.as_table }}`. Dengan memanfaatkan elemen `<table>`, kita bisa generate table untuk menjadi dasar dari form kita. Kemudian kita bisa memanfaatkan elemen `<tr>` dan `<td>` untuk memasukkan data ke baris. Untuk memasukkan input, kita bisa memanfaatkan elemen `<input>`. Lalu, kita bisa memanfaatkan sebuah button untuk melakukan submission dengan mengubah atribut `type=` menjadi `submit`.
 
-<h1> Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML. <h1>
+## Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.
 
 User akan melakukan pengisian formulir yang ada pada halaman HTML yang disajikan. Setelah user memencet tombol submit, akan dilakukan HTTP Request dan data akan dikirimkan ke server. Setelah itu akan dilakukan pengecekan validitas mengenai request tersebut. Jika request tersebut valid, views yang ada pada `views.py` akan disesuaikan untuk dilakukan tampilan. Setelah itu, views akan mengembalikan HTTP Response dan halaman HTML yang sesuai kepada user.
 
-<h1> Implementasi Checklist <h1>
+## Implementasi Checklist
 
 1. Saya menjalankan perintah `python manage.py startapp todolist` pada terminal
 2. Saya menambahkan path `path('todolist/', include('todolist.urls'))` pada `urls.py` yang ada pada folder `project_django`, kemudian saya membuat fungsi show_todolist pada `views.py`
