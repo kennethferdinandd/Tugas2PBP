@@ -26,18 +26,23 @@
         <td>{{task.title}}</td>
         <td>{{task.description}}</td>
         <td>{{task.date}}</td>
-        <td>
-            <input
-              type="checkbox"
-              name="status"
-              id="status"
-              {% if task.is_finished %} checked {% endif %}
-              onchange="location.href='{% url 'todolist:trigger_is_finished' task.id %}'"
-            />
-          </td>
-        <td style="display: flex; justify-content: center">
-            <button><a href="{% url 'todolist:delete_task' task.id %}">Delete</a></button>
-          </td>
+        {% if task.is_finished == True %}
+                        <td>Finished</td>
+                    {% else %}
+                        <td>In Progress</td>
+                    {% endif %}
+                    <td style="display: flex; justify-content: center">
+                      <button><a href="{% url 'todolist:delete_task' task.id %}">Delete</a></button>
+                    </td>
+                    <td>
+                        <input
+                          type="checkbox"
+                          name="status"
+                          id="status"
+                          {% if task.is_finished %} checked {% endif %}
+                          onchange="location.href='{% url 'todolist:trigger_is_finished' task.id %}'"
+                        />
+                      </td>
     </tr>
       
     </tr>
