@@ -26,3 +26,135 @@ User akan melakukan pengisian formulir yang ada pada halaman HTML yang disajikan
 8. Membuat elemen checklist yang menandakan bahwa task tersebut telah selesai di `todolist.html`
 9. Setelah aplikasi bisa melakukan register, login, create task dan logout, lakukan routing agar bisa terhubung antar page
 10. Melakuakan deployment ke Heroku.
+
+<h3> Tugas 5 </h3>
+
+## Perbedaan Inline, Internal dan External CSS serta kelebihan dan kekurangan masing-masing
+
+Internal CSS adalah kode CSS yang ditulis di dalam tag `<style>` dan dituliskan di bagian header file HTML. Internal CSS dapat digunakan untuk membuat tampilan pada satu halaman website dan tidak digunakan pada halaman yang lain. Sehingga, jika kita ingin setiap halaman pada website kita tampilannya berbeda, Internal CSS sangat cocok digunakan.
+
+Kelebihan Internal CSS :
+
+- Perubahan pada Internal CSS hanya berlaku pada satu halaman saja.
+- Kita tidak perlu upload beberapa file karena HTML dan CSS berada dalam satu file.
+- Class dan ID bisa digunakan oleh internal stylesheet
+
+Kekurangan Internal CSS :
+
+- Tidak efisien apabila kita ingin menggunakan CSS yang sama dalam beberapa file.
+- Performa website akan lebih lemot karena CSS yang berbeda-beda akan mengakibatkan loading ulang setiap kali kita ganti halaman website.
+
+External CSS adalah kode CSS yang ditulis terpisah dengan kode HTML. External CSS ditulis di sebuah file dengan extension .css. File external biasanya ditulis setelah bagian `<head>` pada halaman.
+
+Kelebihan External CSS :
+
+- Ukuran file HTMl akan lebih kecil dan kode HTML akan terlihat lebih rapi.
+- Loading website menjadi lebih cepat.
+- File CSS dapat digunakan di beberapa halaman website sekaligus.
+
+Kekurangan External CSS :
+
+- Karena koneksi internet yang lambat, halaman akan menjadi berantakan ketika file CSS gagal dipanggil oleh file HTML
+
+Inline CSS adalah kode CSS yang ditulis langsung pada atribut elemen HTML. Setiap elemen HTML memiliki attribute style, lalu disitulah inline CSS ditulis. Cara ini sebenarnya kurang efisien karena setiap tag HTML harus diberikan style masing-masing. Inline CSS digunakan hanya untuk mengatur satu elemen saja.
+
+Kelebihan Inlince CSS :
+
+- Sangat membantu ketikakita hanya ingin menguji dan melihat perubahan pada satu elemen.
+- Berguna untuk memperbaiki kode dengan cepat.
+- Proses HTTP request lebih kecil dan proses load website akan lebih cepat.
+
+Kekurangan Inline CSS :
+
+- Tidak efisien karena Inline style CSS hanya bisa diterapkan pada satu elemen HTML.
+
+## Tag HTML5
+
+Beberapa tag HTML 5 yang saya ketahui sebagai berikut :
+
+1. `<a>` berguna untuk mendefinsikan hyperlink
+2. `<b>` berguna untuk menampilkan text dengan style bold
+3. `<br>` berguna untuk menghasilkan single line break
+4. `<button>` berguna untuk membuat button
+5. `<td>` berguna untuk mendefiniskan cell di dalam tabel
+6. `<th>` berguna untuk mendefiniskan header cell di dalam tabel
+7. `<title>` berguna untuk mendefinisikan title dokumen
+8. `<tr>` berguna untuk mendefinisikan row cell didalam tabel
+9. `<ul>` berguna untuk mendefinsikan unordered list
+10. `<table>` berguna untuk mendefinsikan data dalam tabel
+
+## Tipe tipe CSS Selector
+
+Beberapa CSS Selector :
+
+1. CSS element selector
+   Element selector memilih HTML elements berdasarkan nama element
+
+```
+...
+p {
+  text-align: center;
+  color: red;
+}
+...
+```
+
+2. CSS id selector
+   Id selector menggunakan attribute id dari sebuah element HTML untuk memilih specific element. Id sebuah element unik, sehingga id selector berguna untuk memilih 1 element yang unik
+
+```
+...
+#para1 {
+  text-align: center;
+  color: red;
+}
+...
+```
+
+3. CSS class selector
+   Class selector memilih HTMl element dengan class attribute yang spesifik. UNtuk memilih element dengan specific class, kita gunakan titik(.) lalu diikuti dengan nama class
+
+```
+...
+.center {
+  text-align: center;
+  color: red;
+}
+...
+```
+
+4. CSS Universal selector
+   Universal selector memilih seluruh HTML elements di dalam halaman
+
+```
+...
+* {
+  text-align: center;
+  color: blue;
+}
+...
+```
+
+5. CSS Grouping selector
+   Grouping selector memilih semua HTML elements dengan definisi style yang sama
+
+```
+...
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+...
+```
+
+## Implementasi
