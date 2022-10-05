@@ -158,3 +158,11 @@ p {
 ```
 
 ## Implementasi
+
+1. Menambahkan beberapa hal agar website bisa menggunakan bootstrap
+2. Mengaplikasikan card ke dalam page `register`, `create-task`, `login` dan 1 card per task untuk `todolist`
+3. Styling menggunakan inline CSS, sesuai dengan yang diinginkan
+4. Memanfaatkan framework bootstrap agar bisa memberi warna pada card yang diinginkan dengan cara memberikan class pada tiap tag `<div>`
+5. Lakukan hal yang sama. Dengan memanfaatkan bootstrap, kita bisa mengostumisasi button yang ada pada halaman
+6. Atur width, margin dan sizing
+7. Commit, dan push

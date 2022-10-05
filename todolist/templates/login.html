@@ -11,38 +11,46 @@
     {% block content %}
     
     <div class = "login">
+        <div class="card text-white bg-dark mb-3" style="width: 30%; margin-left: 30%; margin-top: 10%;">
+            <div class="card-body">
+              <p class = "card-text">
+      
+                  <h1 style="font-size: x-large; margin-left: 42.5%; margin-top: 2%;">Login</h1>
+              
+                  <form method="POST" action="">
+                      {% csrf_token %}
+                      <table class="table table-striped table-dark" style = "width: 80%; margin-left: 10%;">
+                          <tr>
+                              <td>Username: </td>
+                              <td><input type="text" name="username" class="form-control"></td>
+                          </tr>
+                                  
+                          <tr>
+                              <td>Password: </td>
+                              <td><input type="password" name="password" class="form-control""</td>
+                          </tr>
+              
+                          <tr>
+                              <td></td>
+                              <td><input class="btn login_btn" type="submit" value="Login" style= "background-color: white;"></td>
+                          </tr>
+                      </table>
+                  </form>
+              
+                  {% if messages %}
+                      <ul style="margin-left: 35%;">
+                          {% for message in messages %}
+                              <li>{{ message }}</li>
+                          {% endfor %}
+                      </ul>
+                  {% endif %}     
+          
+                   <a style = "margin-left: 35%;"href="{% url 'todolist:register' %}">Buat Akun</a>
+            
+              </p>
+            </div>
+          </div>
     
-        <h1 style="font-size: x-large; margin-left: 45%; margin-top: 8%;">Login</h1>
-    
-        <form method="POST" action="">
-            {% csrf_token %}
-            <table class="table table-striped table-dark" style = "width: 25%; margin-left: 35%;">
-                <tr>
-                    <td>Username: </td>
-                    <td><input type="text" name="username" class="form-control"></td>
-                </tr>
-                        
-                <tr>
-                    <td>Password: </td>
-                    <td><input type="password" name="password" class="form-control""</td>
-                </tr>
-    
-                <tr>
-                    <td></td>
-                    <td><input class="btn login_btn" type="submit" value="Login" style= "background-color: white;"></td>
-                </tr>
-            </table>
-        </form>
-    
-        {% if messages %}
-            <ul style="margin-left: 35%;">
-                {% for message in messages %}
-                    <li>{{ message }}</li>
-                {% endfor %}
-            </ul>
-        {% endif %}     
-
-         <a style = "margin-left: 35%;"href="{% url 'todolist:register' %}">Buat Akun</a>
     
     </div>
     
