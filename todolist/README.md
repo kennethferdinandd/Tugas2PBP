@@ -58,7 +58,7 @@ Kekurangan External CSS :
 
 Inline CSS adalah kode CSS yang ditulis langsung pada atribut elemen HTML. Setiap elemen HTML memiliki attribute style, lalu disitulah inline CSS ditulis. Cara ini sebenarnya kurang efisien karena setiap tag HTML harus diberikan style masing-masing. Inline CSS digunakan hanya untuk mengatur satu elemen saja.
 
-Kelebihan Inlince CSS :
+Kelebihan Inline CSS :
 
 - Sangat membantu ketikakita hanya ingin menguji dan melihat perubahan pada satu elemen.
 - Berguna untuk memperbaiki kode dengan cepat.
