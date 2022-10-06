@@ -9,17 +9,17 @@
 </head>
 <body>
     <div class = "login">
-        <div class="card text-white bg-dark mb-3" style="width: 65%; margin-left: 16%; margin-top: 2%;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 900px; min-width: 400 px; margin:0 auto; margin-top: 2%;">
             <div class="card-body">
-                <h3 style="margin-left: 35%; margin-top:1%;">Task Form</h3>
+                <h3 style="margin-left: 35%; margin-top:1%;font-weight:bold;">Task Form</h3>
               <p class = "card-text">
                 <form method="POST" action="">
                     {% csrf_token %}
-                    <table class = "table table-striped table-dark" style="width: 70%; margin-left:15%;">
+                    <table class = "table table-striped table-dark" style="max-width: 200px; min-width: 100px; margin:0 auto;">
                         {{form.as_table}}
                         <tr>  
                             <td></td>
-                            <td><input class = "btn btn-light" type="submit" value="Create Task"/></td>
+                            <td><input class = "btn btn-light" type="submit" value="Create Task" style="font-weight:bold;"/></td>
                         </tr>
                     </table>
                 </form>
