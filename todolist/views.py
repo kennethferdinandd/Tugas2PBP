@@ -14,6 +14,7 @@ from todolist.forms import TaskForm
 from datetime import date
 from django.core import serializers
 from django.http.response import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 @login_required(login_url="/todolist/login")
@@ -94,32 +95,22 @@ def delete_task (request, id):
 
 @login_required(login_url="/todolist/login")
 def trigger_is_finished(request, id):
-    if request.method == "PUT" :
-        task = Task.objects.get(user=request.user, id=id)
-        task.is_finished = not(task.is_finished)
-        task.save()
-    return JsonResponse (
-        {
-            "pk" : task.id,
-            "fields" : {
-                "title" : task.title,
-                "description" : task.description,
-                "is_finished" : task.is_finished,
-                "date" : task.date
-            },
-        },
-        status = 200,
-    )
+    task = Task.objects.get(user=request.user, id=id)
+    task.is_finished = not (task.is_finished)
+    task.save()
+    return HttpResponseRedirect(reverse("todolist:show_todolist"))
 
+
+@csrf_exempt
 def add_task(request):
     if request.method == "POST":
         title = request.POST.get("title")
         description = request.POST.get("description")
         task = Task.objects.create(
-            user = request.user,
-            title = title,
-            description = description,
-            date = datetime.datetime.today(),
+            user=request.user,
+            title=title,
+            description=description,
+            date=datetime.datetime.today(),
         )
         return JsonResponse(
             {
