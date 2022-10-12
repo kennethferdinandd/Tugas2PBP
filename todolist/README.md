@@ -166,3 +166,33 @@ p {
 5. Lakukan hal yang sama. Dengan memanfaatkan bootstrap, kita bisa mengostumisasi button yang ada pada halaman
 6. Atur width, margin dan sizing
 7. Commit, dan push
+
+<h3> Tugas 5 </h3>
+
+## Perbedaan antara asynchronous programming dan synchronous programming
+
+Synchronous adalah proses jalannya program secara sequential, maksud dari sequential adalah berdasarkan antrian eksekusi program. Sedangkan asynchronous, proses jalannya program bisa dilakukan secara bersamaan tanpa harus menunggu proses antrian. Synchronous merupakan bagian dari Asynchronous (1 antrian) dimana proses akan dieksekusi secara bersamaan dan untuk hasil tergantung lama proses suatu fungsi synchronous.
+
+## Arti dari event driven programming
+
+Event driven programming adalah paradigma programming dimana eksekusi program ditentukan oleh user events, sensor outputs ataupun messageyang di passing dari program yang lain. Pada program ini terdapat button yang jika ditekan akan melakukan function tertentu, contohnya yaitu "Create Task"
+
+## Asynchronous Programming di AJAX
+
+1. Tamhahkan `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>` pada header
+2. Tambahkan tag `<script>` pada body
+3. Tuliskan JQuery syntax didalam script untuk melakukan method POST, DELETE, dan lain-lain
+4. AJAX akan mendengar event listener yang kita tuliskan dalam script untuk menerapkan action yang kita inginkan
+5. Action yang dilakukan akan diproses secara asynchronous didalam server
+6. Data akan ditampilkan di page kita tanpa kita harus refresh
+
+## Implementasi
+
+1. Buat function `show_json` di `views.py`
+2. Edit `show_todolist` didalam `views.py` agar sesuai dengan ketentuan
+3. Tambahkan Script AJAX dalam `base.html` bagian header
+4. Tambahkan function `add task` pada `views.py` untuk post data menggunakan AJAX
+5. Tambahkan function GET pada `todolist.html`
+6. Buat modal untuk menambahkan task baru
+7. Tambahkan function POST pada `todolist.html`
+8. Tambahkan functiono PUT pada `todolist.html`

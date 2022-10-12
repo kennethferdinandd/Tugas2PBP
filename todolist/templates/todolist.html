@@ -3,23 +3,153 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Registrasi Akun</title>
 </head>
 
 <body>
  {% block content %}
- 
+
+ <script>
+  $(document).ready(() => {
+    const card = task => `
+    <div id = "card" sclass="d-flex flex-row align-content-end flex-wrap justify-content-center" style="gap:20px">
+      <div class="card text-white bg-dark mb-3" style="max-width: 35%; min-width: 400px;">
+        <div class = "card-header" style="text-align: center; font-weight:bold;">${task.fields.title}</div>
+           <div class="card-body">
+            <p class = "card-text">
+              <tr>
+                <div class = "row">
+                  <div class="col-sm">${task.fields.description}</div>
+                    <div class="col-sm">Created at ${task.fields.date}</div>
+          
+                    {% if task.is_finished == True %}
+                      <div class="col-sm">Finished</div>
+                      {% else %}
+                      <div class="col-sm">in Progress</div>
+                      {% endif %}
+                      <div class="col-sm"><td>
+                        //button delete
+                      </td></div>
+                      
+                      <div class = "col-sm">
+                        <td>
+                            <input
+                              type="checkbox"
+                              name="status"
+                              id="status"
+                              {% if task.is_finished %} checked {% endif %}
+                             
+                            />
+                          </td>
+                      </div>
+        </div>
+      </tr>
+    </p>
+  </div>
+</div>
+</div>
+
+`;
+const renderTasks = () => {
+    
+    $.get("{% url 'todolist:show_json' %}", data => {
+      $.each(data, (i, value) => {
+        $("#todolist").append(card(value)); // 
+
+        $(`#status-${value.pk}`).change(() => {
+          updateFinished(value.pk);
+        });
+      });
+    });
+  };
+
+  const openModal = e => {
+    e.preventDefault(); 
+    $("#modal-create-task").removeClass("hidden");
+  };
+
+  const closeModal = e => {
+    $("#modal-create-task").addClass("hidden");
+  };
+
+  $("#form-create-task").submit(e => {
+    e.preventDefault();
+
+    if (title && description) {
+      $.ajax({
+        type: "POST",
+        url: "{% url 'todolist:add_task' %}",
+        headers: { "X-CSRFToken": csrftoken }, 
+        mode: "same-origin", 
+        data: {
+          title: title,
+          description: description,
+        },
+        success: response => {
+          $("#form-create-task").trigger("reset");
+          closeModal();
+          $("#todolist").prepend(card(response));
+        },
+        error: error => {
+          console.log(error);
+        },
+      });
+    } else {
+      alert("Mohon isi fields yang kosong");
+    }
+  });
+
+  $("#create-task").click(openModal);
+  $("#close-modal").click(closeModal);
+
+  renderTasks(); 
+
+    
+  })
+ </script>
+
+<div id = "modal-create-task" 
+     class="modal" 
+     tabindex="-1" 
+     role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Task</h5>
+        <form method = "post" id = "form-create-task">
+
+        </form>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" 
+                class="btn btn-primary">Save changes</button>
+        <button id = "close-modal" 
+                type="button" 
+                class="btn btn-secondary" 
+                data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
  <div class = "d-flex flex-wrap justify-content-evenly align-items-center">  
   <div>
-    <h4 style="margin-left: 30%; margin-top:2%; font-weight:bold;">Hello, {{username}}!</h4>
-    <h5 style="margin-left: 30%; margin-top:1%; font-weight:bold;">This is your to do list: </h5>
-    
+    <h4 style="margin-left: 20%; margin-top:10%; font-weight:bold;">Hello, {{username}}!</h4>
+
   </div>
   <div >
 
     <button  class="btn btn-dark">
      <a
+     
      href="{% url 'todolist:create_task' %}"
      style="text-decoration: none; color: white;font-weight:bold;"
      >Tambah Task</a
@@ -36,14 +166,9 @@
  </div>
 
 
- <div class = "login">
 
+  <!-- <div id = "card" sclass="d-flex flex-row align-content-end flex-wrap justify-content-center" style="gap:20px">
 
-  
-
-  <div class="d-flex flex-row align-content-end flex-wrap justify-content-center" style="gap:20px">
-
-    {% for task in todolist %}
     <div class="card text-white bg-dark mb-3" style="max-width: 35%; min-width: 400px;">
       <div class = "card-header" style="text-align: center; font-weight:bold;">{{task.title}}</div>
       <div class="card-body">
@@ -60,7 +185,7 @@
                           <div class="col-sm">in Progress</div>
                           {% endif %}
                           <div class="col-sm"><td>
-                            <button class="btn btn-light"> <a href="{% url 'todolist:delete_task' task.id %}">Delete</a></button>
+                           
                           </td></div>
                           
                           <div class = "col-sm">
@@ -70,7 +195,7 @@
                                   name="status"
                                   id="status"
                                   {% if task.is_finished %} checked {% endif %}
-                                  onchange="location.href='{% url 'todolist:trigger_is_finished' task.id %}'"
+                                  
                                 />
                               </td>
                           </div>
@@ -78,13 +203,11 @@
           </tr>
         </p>
       </div>
-    </div>
-      
-    {% endfor %}
+    </div> -->
 
     
 
-  </div>
+  <!-- </div> -->
         
 
 
@@ -95,7 +218,7 @@
 
 
 
- {% endblock content %}
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
+
+ {% endblock content %}
