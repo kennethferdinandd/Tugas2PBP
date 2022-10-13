@@ -167,7 +167,7 @@ p {
 6. Atur width, margin dan sizing
 7. Commit, dan push
 
-<h3> Tugas 5 </h3>
+<h3> Tugas 6 </h3>
 
 ## Perbedaan antara asynchronous programming dan synchronous programming
 
@@ -195,4 +195,3 @@ Event driven programming adalah paradigma programming dimana eksekusi program di
 5. Tambahkan function GET pada `todolist.html`
 6. Buat modal untuk menambahkan task baru
 7. Tambahkan function POST pada `todolist.html`
-8. Tambahkan functiono PUT pada `todolist.html`
